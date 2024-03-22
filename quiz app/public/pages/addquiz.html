@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-info">
+    <h1>ADD QUIZ</h1>
+    <div class="container">
+        <div class="p-2">
+            <textarea name="" placeholder="ADD Questions" class="border-0 w-100 rounded p-2 fs-5 shadow bg-white"
+                id="question" cols="30" rows="5"></textarea>
+        </div>
+        <div class="p-2">
+            <div>
+                <input type="text" id="option" placeholder="Enter options"
+                    class="border-0 rounded p-2 fs-5 shadow bg-white w-100"><button onclick="addOption()"
+                    class="btn btn-dark">Add</button>
+            </div>
+            <div>
+                <ol id="optionsParent"></ol>
+            </div>
+            <div>
+                <p class="bg-success p-2" id="correctAnswer">Correct Answer</p>
+
+            </div>
+            <div>
+                <button onclick="submitQuestion()" class="btn btn-dark">SUBMIT Question</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="addquiz.js"></script>
+</body>
+
+</html>
